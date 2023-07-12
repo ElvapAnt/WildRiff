@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <com.rmas.wildriff.model.CustomMapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".HomeFragment" />
+
+        <ImageButton
+            android:id="@+id/buttonAddRiff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="100dp"
+            android:layout_marginEnd="5dp"
+            android:src="@drawable/add_riff_to_location"
+            android:backgroundTint="@android:color/transparent"/>
+        <ImageButton
+            android:id="@+id/buttonFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="100dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/filter_button"
+            android:backgroundTint="@android:color/transparent"/>
+</RelativeLayout>

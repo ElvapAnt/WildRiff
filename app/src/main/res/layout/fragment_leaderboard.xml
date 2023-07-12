@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black">
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/wildriff_leaderboard"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/yellow"
+        android:gravity="center_horizontal"
+        android:padding="16dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewLeaderboard"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:elevation="30dp"
+        android:layout_margin="5dp"
+        android:background="@color/orange"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/textError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/error_fetching_leaderboard_data"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:visibility="gone"
+        android:padding="16dp"/>
+
+</LinearLayout>

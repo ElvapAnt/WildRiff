@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_welcome"
+    app:startDestination="@id/WelcomeFragment">
+    <fragment
+        android:id="@+id/WelcomeFragment"
+        android:name="com.rmas.wildriff.WelcomeFragment"
+        tools:layout="@layout/fragment_welcome" >
+        <action
+            android:id="@+id/action_WelcomeFragment_to_SignInFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:destination="@id/SignInFragment" />
+        <action
+            android:id="@+id/action_WelcomeFragment_to_RegisterFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:destination="@id/RegisterFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/RegisterFragment"
+        android:name="com.rmas.wildriff.RegisterFragment"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_RegisterFragment_to_SignInFragment"
+            app:destination="@id/SignInFragment" />
+    </fragment>
+        <fragment
+            android:id="@+id/SignInFragment"
+            android:name="com.rmas.wildriff.SignInFragment"
+            tools:layout="@layout/fragment_signin" >
+            <action
+                android:id="@+id/action_SignInFragment_to_RegisterFragment"
+                app:destination="@id/RegisterFragment" />
+        </fragment>
+</navigation>

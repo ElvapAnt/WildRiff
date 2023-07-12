@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@drawable/profile_background">
+    <!-- AddRiffFragment layout code -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@drawable/pfp_background"
+        android:backgroundTint="@color/yellow">
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_name"
+            android:textColor="@color/black"
+            android:textStyle="italic"
+            android:textColorHint="@color/black" />
+        <EditText
+            android:id="@+id/editTextPitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_pitch"
+            android:textColor="@color/black"
+            android:textStyle="italic"
+            android:textColorHint="@color/black"/>
+        <EditText
+            android:id="@+id/editTextTonality"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_tonality"
+            android:textColor="@color/black"
+            android:textStyle="italic"
+            android:textColorHint="@color/black"/>
+        <EditText
+            android:id="@+id/editTextKey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_key"
+            android:textColorHint="@color/black"
+            android:textStyle="italic"
+            android:textColor="@color/black"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+            <Button
+                style="?android:buttonBarButtonStyle"
+                android:id="@+id/buttonUpload"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:text="@string/text_upload"
+                android:textSize="20sp"
+                android:textColor="@color/yellow"
+                android:layout_margin="0dp"
+                android:backgroundTint="@android:color/holo_blue_dark"/>
+            <Button
+                style="?android:buttonBarButtonStyle"
+                android:id="@+id/buttonCancel"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:text="@string/text_cancel"
+                android:textSize="20sp"
+                android:layout_marginStart="3dp"
+                android:textColor="@color/blackish"
+                android:backgroundTint="@android:color/holo_red_dark"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonSelectFile"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:background="@drawable/audio_file_upload"
+                android:backgroundTint="@color/black" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/textSelectedFile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sample_text"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonPlay"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/play_button" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonReset"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/reset_button" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

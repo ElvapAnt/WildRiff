@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/profile_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:elevation="20dp"
+        android:background="@color/yellow">
+
+        <ImageView
+            android:id="@+id/imageProfile"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/pick_pfp"
+            android:padding="10dp"
+            android:scaleType="centerCrop"
+            android:foreground="@drawable/pfp_background" />
+
+        <TextView
+            android:id="@+id/textViewUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sample_text"
+            android:textSize="30sp"
+            android:textStyle="italic|bold"
+            android:layout_gravity="center_vertical"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+            android:textColor="@android:color/black"
+            android:layout_marginStart="16dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding = "4dp">
+
+        <Button
+            android:id="@+id/buttonAddRiff"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="@string/add_riff"
+            android:textColor="@color/yellow"
+            android:backgroundTint="@android:color/holo_blue_dark"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textRiffsTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/uploaded_riffs"
+        android:textSize="30sp"
+        android:fontFamily="monospace"
+        android:textAlignment="center"
+        android:textStyle="italic|bold"
+        android:textColor="@color/yellow"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewRiffs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:elevation="20dp"
+        android:backgroundTint="@color/yellow"
+        android:background="@drawable/recycler_outline"/>
+
+</LinearLayout>

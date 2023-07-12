@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">WildRiff</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="textview_wild_riff">Welcome to WildRiff™</string>
+    <string name="register_fragment_label">Register</string>
+    <string name="sign_in_fragment_label">Sign In</string>
+    <string name="button_register">Register</string>
+    <string name="button_sign_in">Sign in</string>
+    <string name="create_account">Create Account</string>
+    <string name="hint_full_name">Full Name</string>
+    <string name="hint_first_name">First Name</string>
+    <string name="hint_last_name">Last Name</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_confirm_password">Confirm Password</string>
+    <string name="hint_phone_num">Phone Number</string>
+    <string name="hint_email">Email</string>
+    <string name="content_description_select_image">Select Image</string>
+    <string name="textLogin">Sign in</string>
+    <string name="no_account">Don\'t have an account?</string>
+    <string name="link_signup">Sign up</string>
+    <string name="link_signin">Sign in</string>
+    <string name="already_has_account">Already have an account?</string>
+    <string name="sample_text">Sample text</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_play">Play</string>
+    <string name="menu_profile">Profile</string>
+    <string name="menu_leaderboard">Leaderboard</string>
+
+    <string-array name="country_list">
+        <item>Serbia</item>
+        <item>UK</item>
+        <item>Germany</item>
+        <item>France</item>
+        <item>USA</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="uploaded_riffs">My Riffs</string>
+    <string name="add_riff">Add new riff!</string>
+    <string name="remove_riff">Remove riff</string>
+    <string name="text_upload">Upload</string>
+    <string name="text_cancel">Cancel</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_pitch">Pitch</string>
+    <string name="hint_tonality">Tonality</string>
+    <string name="hint_key">Key</string>
+    <string name="no_riffs_uploaded_yet">No riffs uploaded yet</string>
+    <string name="text_select_riff">Select a riff!</string>
+    <string name="hint_radius">Radius</string>
+    <string name="btn_apply_filter">Apply filter</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_submit">Submit</string>
+    <string name="text_grade_the_riff">Grade the Riff!</string>
+    <string name="filter_other_users_riffs">Filter other users riffs!</string>
+    <string name="error_fetching_leaderboard_data">Error fetching leaderboard data.</string>
+    <string name="wildriff_leaderboard">WildRiff™ Leaderboard</string>
+</resources>

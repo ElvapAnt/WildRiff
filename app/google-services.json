@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "585182835449",
+    "project_id": "wildriff-84a61",
+    "storage_bucket": "wildriff-84a61.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:585182835449:android:bd5c0190819ae4523ae828",
+        "android_client_info": {
+          "package_name": "com.rmas.wildriff"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "585182835449-sm05gnf04dlrc4d0jnitjjo3hlajefud.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAaFKFwEbwXabboIiRS2JylFOqQQN34Z5k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "585182835449-sm05gnf04dlrc4d0jnitjjo3hlajefud.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

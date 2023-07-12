@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/textRiffName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:padding="2dp"
+        android:textColor="@android:color/black" />
+    <TextView
+        android:id="@+id/textRiffPitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:padding="2dp"
+        android:textColor="@color/blue" />
+    <TextView
+        android:id="@+id/textRiffTonality"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:padding="2dp"
+        android:textColor="@color/green" />
+    <TextView
+        android:id="@+id/textRiffKey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:padding="2dp"
+        android:textColor="@color/red" />
+    <TextView
+        android:id="@+id/textViewGrade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:padding="2dp"
+        android:textColor="@color/black"/>
+
+</LinearLayout>

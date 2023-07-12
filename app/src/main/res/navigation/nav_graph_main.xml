@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_main"
+    app:startDestination="@id/HomeFragment">
+    <fragment
+        android:id="@+id/HomeFragment"
+        android:name="com.rmas.wildriff.HomeFragment"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_HomeFragment_to_SelectRiffFragment"
+            app:destination="@id/SelectRiffFragment" />
+        <action
+            android:id="@+id/action_HomeFragment_to_HomeFilterFragment"
+            app:destination="@id/HomeFilterFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/SelectRiffFragment"
+        android:name="com.rmas.wildriff.SelectRiffFragment"
+        tools:layout="@layout/fragment_select_riff" >
+    </fragment>
+    <fragment
+        android:id="@+id/PlayFragment"
+        android:name="com.rmas.wildriff.PlayFragment"
+        tools:layout="@layout/fragment_play" >
+        <action
+            android:id="@+id/action_PlayFragment_to_PlayFilterFragment"
+            app:destination="@id/PlayFilterFragment"/>
+        <action
+            android:id="@+id/action_PlayFragment_to_GradeFragment"
+            app:destination="@id/GradeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ProfileFragment"
+        android:name="com.rmas.wildriff.ProfileFragment"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_ProfileFragment_to_AddRiffFragment"
+            app:destination="@id/AddRiffFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/LeaderboardFragment"
+        android:name="com.rmas.wildriff.LeaderboardFragment"
+        tools:layout="@layout/fragment_leaderboard" >
+    </fragment>
+    <fragment
+        android:id="@+id/AddRiffFragment"
+        android:name="com.rmas.wildriff.AddRiffFragment"
+        tools:layout="@layout/fragment_add_riff">
+        <action
+            android:id="@+id/action_AddRiffFragment_to_ProfileFragment"
+            app:destination="@id/ProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/HomeFilterFragment"
+        android:name="com.rmas.wildriff.HomeFilterFragment"
+        tools:layout="@layout/fragment_home_filter">
+        <action
+            android:id="@+id/action_HomeFilterFragment_to_HomeFragment"
+            app:destination="@id/HomeFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/GradeFragment"
+        android:name="com.rmas.wildriff.GradeFragment"
+        tools:layout="@layout/fragment_grade">
+
+        <action
+            android:id="@+id/action_GradeFragment_to_PlayFragment"
+            app:destination="@id/PlayFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/PlayFilterFragment"
+        android:name="com.rmas.wildriff.PlayFilterFragment"
+        tools:layout="@layout/fragment_play_filter">
+        <action
+            android:id="@+id/action_PlayFilterFragment_to_PlayFragment"
+            app:destination="@id/PlayFragment"/>
+    </fragment>
+</navigation>
